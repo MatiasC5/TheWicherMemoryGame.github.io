@@ -87,7 +87,7 @@ function checkEqual() {
     const optionTwoId = cardsChosenId[1]
 
     if (optionOneId === optionTwoId) {
-        console.log('you have chosen the same image');
+        Alert('You have chosen the same image');
         card[optionOneId].setAttribute('src', './images/fondo.png')
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
@@ -96,7 +96,6 @@ function checkEqual() {
         card[optionOneId].removeEventListener('click', flipBoard)
         card[optionTwoId].removeEventListener('click', flipBoard)
         cardsWon.push(cardsChosen)
-        console.log(cardsWon);
     }
     else {
         card[optionOneId].setAttribute('src', './images/fondo.png')
