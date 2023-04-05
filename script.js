@@ -87,7 +87,7 @@ function checkEqual() {
     const optionTwoId = cardsChosenId[1]
 
     if (optionOneId === optionTwoId) {
-        Alert('You have chosen the same image');
+        alert('You have chosen the same image');
         card[optionOneId].setAttribute('src', './images/fondo.png')
     }
     else if (cardsChosen[0] === cardsChosen[1]) {
